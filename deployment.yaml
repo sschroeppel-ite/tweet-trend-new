@@ -4,7 +4,7 @@ metadata:
   name: devops-course-rtp
   namespace: devops-course
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app:  devops-course-rtp
@@ -17,7 +17,7 @@ spec:
       - name: jfrogcred
       containers:
       - name:  devops-course-rtp
-        image: devops-course01.jfrog.io/devops-course-docker/ttrend:2.1.2
+        image: trials1me8t.jfrog.io/devops-course-docker/ttrend:2.1.2
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
