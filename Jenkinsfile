@@ -72,7 +72,6 @@ pipeline {
                 script{
                     sh 'whoami'
                     sh 'ls'
-                    sh 'which kubectl'
                     sh 'env | grep path'
                     sh './deploy.sh'
                 }
