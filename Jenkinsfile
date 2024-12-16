@@ -1,4 +1,4 @@
-def imageName = 'https://trials1me8t.jfrog.io/devops-course-docker/ttrend'
+def imageName = 'trials1me8t.jfrog.io/devops-course-docker/ttrend'
 def version   = '2.1.2'
 def registry = 'https://trials1me8t.jfrog.io'
 pipeline {
