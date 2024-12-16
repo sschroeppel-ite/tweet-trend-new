@@ -16,8 +16,8 @@ pipeline {
         }
 
 
-        def registry = 'https://trials1me8t.jfrog.io'
         stage("Jar Publish") {
+            def registry = 'https://trials1me8t.jfrog.io'
             steps {
                 script {
                         echo '<--------------- Jar Publish Started --------------->'
@@ -41,7 +41,7 @@ pipeline {
                 
                 }
             }   
-    } 
+        } 
     }
 
 }
