@@ -70,9 +70,6 @@ pipeline {
         stage(" Kubernetes Deploy "){
             steps{
                 script{
-                    sh 'whoami'
-                    sh 'ls'
-                    sh 'env | grep path'
                     sh './deploy.sh'
                 }
             }
