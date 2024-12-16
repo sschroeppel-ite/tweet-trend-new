@@ -66,6 +66,14 @@ pipeline {
                 }
             }
         }
+
+        stage(" Kubernetes Deploy "){
+            steps{
+                script{
+                    sh './deploy.sh'
+                }
+            }
+        }
     }
 
 }
