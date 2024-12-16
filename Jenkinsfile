@@ -17,9 +17,9 @@ pipeline {
 
 
         stage("Jar Publish") {
-            def registry = 'https://trials1me8t.jfrog.io'
             steps {
                 script {
+                        def registry = 'https://trials1me8t.jfrog.io'
                         echo '<--------------- Jar Publish Started --------------->'
                         def server = Artifactory.newServer url:registry+"/artifactory" ,  credentialsId:"artifactory-cred"
                         def properties = "buildid=${env.BUILD_ID},commitid=${GIT_COMMIT}";
