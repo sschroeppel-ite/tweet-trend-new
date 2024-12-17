@@ -67,10 +67,10 @@ pipeline {
             }
         }
 
-        stage(" Kubernetes Deploy "){
+        stage(" Helm Deploy "){
             steps{
                 script{
-                    sh './deploy.sh'
+                    sh 'helm install ttrend ttrend-0.1.0.tgz'
                 }
             }
         }
